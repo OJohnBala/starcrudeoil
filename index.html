@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Crude Oil</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1e3a5f',secondary:'#d4af37'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.hero-bg { background-image: url('https://readdy.ai/api/search-image?query=Modern%20oil%20refinery%20industrial%20facility%20with%20blue%20steel%20structures%20and%20golden%20sunset%20lighting%2C%20professional%20corporate%20background%20with%20clean%20white%20space%20on%20left%20side%20for%20text%20overlay%2C%20high%20contrast%20industrial%20photography&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center; }
+.gradient-gold { background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%); }
+.text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.card-hover { transition: all 0.3s ease; }
+.card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.language-selector { display: none; }
+.language-selector.active { display: block; }
+</style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+<header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+<nav class="w-full px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<h1 class="text-2xl font-['Pacifico'] text-primary">Star Crude Oil</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Home</a>
+<a href="#sobre" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Sobre</a>
+<a href="#servicos" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Serviços</a>
+<a href="#mercados" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Mercados</a>
+<a href="#contato" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Contato</a>
+</div>
+<div class="relative">
+<button id="language-toggle" class="flex items-center space-x-2 text-primary hover:text-secondary transition-colors duration-300">
+<img src="https://readdy.ai/api/search-image?query=Brazil%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=br-flag&orientation=landscape" alt="PT" class="w-6 h-4 object-cover rounded-sm">
+<span class="text-sm font-medium">PT</span>
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div id="language-dropdown" class="language-selector absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg">
+<a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
+<span class="text-sm">Português</span>
+</a>
+<a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
+<span class="text-sm">English</span>
+</a>
+<a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
+<span class="text-sm">Español</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<section id="home" class="hero-bg min-h-screen flex items-center relative">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+<div class="w-full px-6 relative z-10">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-2xl fade-in">
+<h1 class="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+Star Crude Oil
+</h1>
+<p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+Consultoria especializada em petróleo e gás com mais de 10 anos de experiência em intermediações de infraestruturas, equipamentos e M&A
+</p>
+<button class="gradient-gold text-white px-8 py-4 !rounded-button text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap">
+Conheça Nossos Serviços
+</button>
+</div>
+</div>
+</div>
+</section>
+<section id="sobre" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="fade-in">
+<h2 class="text-4xl font-bold text-primary mb-6">Sobre a Star Crude Oil</h2>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, fundada pelo Sr. José Almeida, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.
+</p>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+Nossa expertise abrange desde a intermediação de infraestruturas complexas até equipamentos especializados e operações de fusões e aquisições (M&A), sempre com foco na excelência e resultados sustentáveis.
+</p>
+<p class="text-lg text-gray-700 leading-relaxed">
+Atuamos estrategicamente em mercados-chave da América Latina e Europa, oferecendo soluções personalizadas que impulsionam o crescimento e a eficiência operacional de nossos clientes.
+</p>
+</div>
+<div class="fade-in">
+<img src="https://readdy.ai/api/search-image?query=Professional%20oil%20and%20gas%20consulting%20team%20in%20modern%20office%20environment%20with%20industrial%20equipment%20blueprints%20and%20digital%20displays%20showing%20petroleum%20infrastructure%20projects%2C%20corporate%20business%20atmosphere%20with%20blue%20and%20gold%20accents&width=600&height=400&seq=about-img&orientation=landscape" alt="Sobre a empresa" class="w-full h-96 object-cover rounded-xl shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<section id="servicos" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Nossos Serviços</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Oferecemos soluções especializadas para impulsionar seu negócio no setor de petróleo e gás
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+<i class="ri-building-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Intermediação de Infraestruturas</h3>
+<p class="text-gray-700 leading-relaxed">
+Facilitamos conexões estratégicas para projetos de infraestrutura petrolífera, desde refinarias até terminais de distribuição, garantindo eficiência e conformidade regulatória.
+</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+<i class="ri-settings-3-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Equipamentos Especializados</h3>
+<p class="text-gray-700 leading-relaxed">
+Intermediamos a aquisição e locação de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.
+</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+<i class="ri-handshake-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">M&A (Fusões e Aquisições)</h3>
+<p class="text-gray-700 leading-relaxed">
+Assessoramos em operações de fusões e aquisições no setor energético, proporcionando análises estratégicas e facilitando negociações que maximizam valor e oportunidades.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="mercados" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Nossos Mercados</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Presença estratégica em mercados-chave da América Latina e Europa
+</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=Brazil%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=brazil-flag&orientation=landscape" alt="Brasil" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
+<h3 class="text-lg font-bold text-primary mb-2">Brasil</h3>
+<p class="text-sm text-gray-600">Maior mercado de atuação com foco no pré-sal e refino</p>
+</div>
+<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=Ecuador%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=ecuador-flag&orientation=landscape" alt="Equador" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
+<h3 class="text-lg font-bold text-primary mb-2">Equador</h3>
+<p class="text-sm text-gray-600">Projetos de exploração e infraestrutura</p>
+</div>
+<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=Colombia%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=colombia-flag&orientation=landscape" alt="Colômbia" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
+<h3 class="text-lg font-bold text-primary mb-2">Colômbia</h3>
+<p class="text-sm text-gray-600">Intermediação em campos offshore e onshore</p>
+</div>
+<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=Portugal%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=portugal-flag&orientation=landscape" alt="Portugal" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
+<h3 class="text-lg font-bold text-primary mb-2">Portugal</h3>
+<p class="text-sm text-gray-600">Gateway europeu para negócios energéticos</p>
+</div>
+<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=Spain%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=spain-flag&orientation=landscape" alt="Espanha" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
+<h3 class="text-lg font-bold text-primary mb-2">Espanha</h3>
+<p class="text-sm text-gray-600">Refinarias e distribuição no mercado ibérico</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contato" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Entre em Contato</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Estamos prontos para discutir suas necessidades e oportunidades no setor de petróleo e gás
+</p>
+</div>
+<div class="max-w-2xl mx-auto">
+<div class="fade-in">
+<h3 class="text-2xl font-bold text-primary mb-6 text-center">Informações de Contato</h3>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
+<i class="ri-map-pin-line text-xl text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-1">Endereço</h4>
+<p class="text-gray-700">Av. Paulista, 1000 - Bela Vista<br>São Paulo, SP - 01310-100</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
+<i class="ri-phone-line text-xl text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-1">Telefone</h4>
+<p class="text-gray-700">+55 (11) 3456-7890</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
+<i class="ri-mail-line text-xl text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-1">Email</h4>
+<p class="text-gray-700">contato@starcrudeoil.com</p>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
+<i class="ri-global-line text-xl text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-primary mb-1">Website</h4>
+<p class="text-gray-700">www.starcrudeoil.com</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary text-white py-12">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-2xl font-['Pacifico'] mb-4">Star Crude Oil</h3>
+<p class="text-gray-300 mb-4">
+Consultoria especializada em petróleo e gás com mais de 10 anos de experiência no mercado.
+</p>
+<p class="text-gray-300 text-sm">www.starcrudeoil.com</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Serviços</h4>
+<ul class="space-y-2 text-gray-300">
+<li>Intermediação de Infraestruturas</li>
+<li>Equipamentos Especializados</li>
+<li>M&A (Fusões e Aquisições)</li>
+<li>Consultoria Estratégica</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Mercados</h4>
+<ul class="space-y-2 text-gray-300">
+<li>Brasil</li>
+<li>Equador</li>
+<li>Colômbia</li>
+<li>Portugal</li>
+<li>Espanha</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Contato</h4>
+<ul class="space-y-2 text-gray-300">
+<li>+55 (11) 3181-4325</li>
+<li>contato@starcrudeoil.com</li>
+<li>São Paulo, SP - Brasil</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+<p>&copy; 2024 Star Crude Oil. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+<script id="fade-in-animation">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+}
+});
+}, observerOptions);
+document.querySelectorAll('.fade-in').forEach(el => {
+observer.observe(el);
+});
+});
+</script>
+<script id="language-selector">
+document.addEventListener('DOMContentLoaded', function() {
+const languageToggle = document.getElementById('language-toggle');
+const languageDropdown = document.getElementById('language-dropdown');
+const translations = {
+pt: {
+nav: {
+home: 'Home',
+about: 'Sobre',
+services: 'Serviços',
+markets: 'Mercados',
+contact: 'Contato'
+},
+hero: {
+title: 'Star Crude Oil',
+subtitle: 'Consultoria especializada em petróleo e gás com mais de 10 anos de experiência em intermediações de infraestruturas, equipamentos e M&A',
+cta: 'Conheça Nossos Serviços'
+},
+about: {
+title: 'Sobre a Star Crude Oil',
+p1: 'Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.',
+p2: 'Nossa expertise abrange desde a intermediação de infraestruturas complexas até equipamentos especializados e operações de fusões e aquisições (M&A), sempre com foco na excelência e resultados sustentáveis.',
+p3: 'Atuamos estrategicamente em mercados-chave da América Latina e Europa, oferecendo soluções personalizadas que impulsionam o crescimento e a eficiência operacional de nossos clientes.'
+},
+services: {
+title: 'Nossos Serviços',
+subtitle: 'Oferecemos soluções especializadas para impulsionar seu negócio no setor de petróleo e gás',
+service1: {
+title: 'Intermediação de Infraestruturas',
+desc: 'Facilitamos conexões estratégicas para projetos de infraestrutura petrolífera, desde refinarias até terminais de distribuição, garantindo eficiência e conformidade regulatória.'
+},
+service2: {
+title: 'Equipamentos Especializados',
+desc: 'Intermediamos a aquisição e locação de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.'
+},
+service3: {
+title: 'M&A (Fusões e Aquisições)',
+desc: 'Assessoramos em operações de fusões e aquisições no setor energético, proporcionando análises estratégicas e facilitando negociações que maximizam valor e oportunidades.'
+}
+},
+markets: {
+title: 'Nossos Mercados',
+subtitle: 'Presença estratégica em mercados-chave da América Latina e Europa',
+brazil: 'Maior mercado de atuação com foco no pré-sal e refino',
+ecuador: 'Projetos de exploração e infraestrutura amazônica',
+colombia: 'Intermediação em campos offshore e onshore',
+portugal: 'Gateway europeu para negócios energéticos',
+spain: 'Refinarias e distribuição no mercado ibérico'
+},
+contact: {
+title: 'Entre em Contato',
+subtitle: 'Estamos prontos para discutir suas necessidades e oportunidades no setor de petróleo e gás',
+info: 'Informações de Contato',
+address: 'Endereço',
+phone: 'Telefone',
+email: 'Email',
+website: 'Website'
+},
+footer: {
+description: 'Consultoria especializada em petróleo e gás com mais de 10 anos de experiência no mercado.',
+services: 'Serviços',
+markets: 'Mercados',
+contact: 'Contato',
+rights: 'Todos os direitos reservados.'
+}
+},
+en: {
+nav: {
+home: 'Home',
+about: 'About',
+services: 'Services',
+markets: 'Markets',
+contact: 'Contact'
+},
+hero: {
+title: 'Star Crude Oil',
+subtitle: 'Specialized consulting in oil and gas with over 10 years of experience in infrastructure, equipment, and M&A intermediation',
+cta: 'Learn About Our Services'
+},
+about: {
+title: 'About Star Crude Oil',
+p1: 'With over <span class="text-primary font-semibold">10 years of experience</span> in the oil and gas sector, Star Crude Oil has established itself as a benchmark consultancy in strategic intermediations.',
+p2: 'Our expertise ranges from intermediating complex infrastructures to specialized equipment and mergers and acquisitions (M&A) operations, always focusing on excellence and sustainable results.',
+p3: 'We operate strategically in key markets in Latin America and Europe, offering customized solutions that drive growth and operational efficiency for our clients.'
+},
+services: {
+title: 'Our Services',
+subtitle: 'We offer specialized solutions to boost your business in the oil and gas sector',
+service1: {
+title: 'Infrastructure Intermediation',
+desc: 'We facilitate strategic connections for petroleum infrastructure projects, from refineries to distribution terminals, ensuring efficiency and regulatory compliance.'
+},
+service2: {
+title: 'Specialized Equipment',
+desc: 'We intermediate the acquisition and leasing of high-tech equipment for exploration, refining and distribution, connecting reliable suppliers to your projects.'
+},
+service3: {
+title: 'M&A (Mergers and Acquisitions)',
+desc: 'We advise on mergers and acquisitions operations in the energy sector, providing strategic analysis and facilitating negotiations that maximize value and opportunities.'
+}
+},
+markets: {
+title: 'Our Markets',
+subtitle: 'Strategic presence in key markets in Latin America and Europe',
+brazil: 'Largest operating market with focus on pre-salt and refining',
+ecuador: 'Amazon exploration and infrastructure projects',
+colombia: 'Intermediation in offshore and onshore fields',
+portugal: 'European gateway for energy business',
+spain: 'Refineries and distribution in the Iberian market'
+},
+contact: {
+title: 'Get in Touch',
+subtitle: 'We are ready to discuss your needs and opportunities in the oil and gas sector',
+info: 'Contact Information',
+address: 'Address',
+phone: 'Phone',
+email: 'Email',
+website: 'Website'
+},
+footer: {
+description: 'Specialized consulting in oil and gas with over 10 years of market experience.',
+services: 'Services',
+markets: 'Markets',
+contact: 'Contact',
+rights: 'All rights reserved.'
+}
+},
+es: {
+nav: {
+home: 'Inicio',
+about: 'Acerca',
+services: 'Servicios',
+markets: 'Mercados',
+contact: 'Contacto'
+},
+hero: {
+title: 'Star Crude Oil',
+subtitle: 'Consultoría especializada en petróleo y gas con más de 10 años de experiencia en intermediaciones de infraestructuras, equipos y M&A',
+cta: 'Conozca Nuestros Servicios'
+},
+about: {
+title: 'Acerca de Star Crude Oil',
+p1: 'Con más de <span class="text-primary font-semibold">10 años de experiencia</span> en el sector petrolero y gasífero, Star Crude Oil se ha establecido como una consultoría de referencia en intermediaciones estratégicas.',
+p2: 'Nuestra experiencia abarca desde la intermediación de infraestructuras complejas hasta equipos especializados y operaciones de fusiones y adquisiciones (M&A), siempre con enfoque en la excelencia y resultados sostenibles.',
+p3: 'Operamos estratégicamente en mercados clave de América Latina y Europa, ofreciendo soluciones personalizadas que impulsan el crecimiento y la eficiencia operacional de nuestros clientes.'
+},
+services: {
+title: 'Nuestros Servicios',
+subtitle: 'Ofrecemos soluciones especializadas para impulsar su negocio en el sector petrolero y gasífero',
+service1: {
+title: 'Intermediación de Infraestructuras',
+desc: 'Facilitamos conexiones estratégicas para proyectos de infraestructura petrolera, desde refinerías hasta terminales de distribución, garantizando eficiencia y cumplimiento regulatorio.'
+},
+service2: {
+title: 'Equipos Especializados',
+desc: 'Intermediamos la adquisición y arrendamiento de equipos de alta tecnología para exploración, refinación y distribución, conectando proveedores confiables con sus proyectos.'
+},
+service3: {
+title: 'M&A (Fusiones y Adquisiciones)',
+desc: 'Asesoramos en operaciones de fusiones y adquisiciones en el sector energético, proporcionando análisis estratégicos y facilitando negociaciones que maximizan valor y oportunidades.'
+}
+},
+markets: {
+title: 'Nuestros Mercados',
+subtitle: 'Presencia estratégica en mercados clave de América Latina y Europa',
+brazil: 'Mayor mercado de operación con enfoque en pre-sal y refinación',
+ecuador: 'Proyectos de exploración e infraestructura amazónica',
+colombia: 'Intermediación en campos offshore y onshore',
+portugal: 'Puerta de entrada europea para negocios energéticos',
+spain: 'Refinerías y distribución en el mercado ibérico'
+},
+contact: {
+title: 'Póngase en Contacto',
+subtitle: 'Estamos listos para discutir sus necesidades y oportunidades en el sector petrolero y gasífero',
+info: 'Información de Contacto',
+address: 'Dirección',
+phone: 'Teléfono',
+email: 'Email',
+website: 'Sitio Web'
+},
+footer: {
+description: 'Consultoría especializada en petróleo y gas con más de 10 años de experiencia en el mercado.',
+services: 'Servicios',
+markets: 'Mercados',
+contact: 'Contacto',
+rights: 'Todos los derechos reservados.'
+}
+}
+};
+function translatePage(lang) {
+const t = translations[lang];
+// Navigation
+document.querySelector('a[href="#home"]').textContent = t.nav.home;
+document.querySelector('a[href="#sobre"]').textContent = t.nav.about;
+document.querySelector('a[href="#servicos"]').textContent = t.nav.services;
+document.querySelector('a[href="#mercados"]').textContent = t.nav.markets;
+document.querySelector('a[href="#contato"]').textContent = t.nav.contact;
+// Hero section
+document.querySelector('#home h1').textContent = t.hero.title;
+document.querySelector('#home p').textContent = t.hero.subtitle;
+document.querySelector('#home button').textContent = t.hero.cta;
+// About section
+document.querySelector('#sobre h2').textContent = t.about.title;
+const aboutPs = document.querySelectorAll('#sobre p');
+aboutPs[0].innerHTML = t.about.p1;
+aboutPs[1].textContent = t.about.p2;
+aboutPs[2].textContent = t.about.p3;
+// Services section
+document.querySelector('#servicos h2').textContent = t.services.title;
+document.querySelector('#servicos > div > div > p').textContent = t.services.subtitle;
+const serviceCards = document.querySelectorAll('#servicos .card-hover');
+serviceCards[0].querySelector('h3').textContent = t.services.service1.title;
+serviceCards[0].querySelector('p').textContent = t.services.service1.desc;
+serviceCards[1].querySelector('h3').textContent = t.services.service2.title;
+serviceCards[1].querySelector('p').textContent = t.services.service2.desc;
+serviceCards[2].querySelector('h3').textContent = t.services.service3.title;
+serviceCards[2].querySelector('p').textContent = t.services.service3.desc;
+// Markets section
+document.querySelector('#mercados h2').textContent = t.markets.title;
+document.querySelector('#mercados > div > div > p').textContent = t.markets.subtitle;
+const marketCards = document.querySelectorAll('#mercados .card-hover');
+marketCards[0].querySelector('p').textContent = t.markets.brazil;
+marketCards[1].querySelector('p').textContent = t.markets.ecuador;
+marketCards[2].querySelector('p').textContent = t.markets.colombia;
+marketCards[3].querySelector('p').textContent = t.markets.portugal;
+marketCards[4].querySelector('p').textContent = t.markets.spain;
+// Contact section
+document.querySelector('#contato h2').textContent = t.contact.title;
+document.querySelector('#contato > div > div > p').textContent = t.contact.subtitle;
+document.querySelector('#contato h3').textContent = t.contact.info;
+const contactItems = document.querySelectorAll('#contato h4');
+contactItems[0].textContent = t.contact.address;
+contactItems[1].textContent = t.contact.phone;
+contactItems[2].textContent = t.contact.email;
+contactItems[3].textContent = t.contact.website;
+// Footer
+document.querySelector('footer p').textContent = t.footer.description;
+const footerHeaders = document.querySelectorAll('footer h4');
+footerHeaders[0].textContent = t.footer.services;
+footerHeaders[1].textContent = t.footer.markets;
+footerHeaders[2].textContent = t.footer.contact;
+document.querySelector('footer .text-center p').innerHTML = '&copy; 2024 Star Crude Oil. ' + t.footer.rights;
+// Update language indicator
+const langSpan = languageToggle.querySelector('span');
+const langImg = languageToggle.querySelector('img');
+if (lang === 'en') {
+langSpan.textContent = 'EN';
+langImg.src = 'https://readdy.ai/api/search-image?query=United%20States%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=us-flag2&orientation=landscape';
+langImg.alt = 'EN';
+} else if (lang === 'es') {
+langSpan.textContent = 'ES';
+langImg.src = 'https://readdy.ai/api/search-image?query=Spain%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=es-flag2&orientation=landscape';
+langImg.alt = 'ES';
+} else if (lang === 'pt') {
+langSpan.textContent = 'PT';
+langImg.src = 'https://readdy.ai/api/search-image?query=Brazil%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=br-flag3&orientation=landscape';
+langImg.alt = 'PT';
+}
+}
+languageToggle.addEventListener('click', function(e) {
+e.stopPropagation();
+languageDropdown.classList.toggle('active');
+});
+document.addEventListener('click', function() {
+languageDropdown.classList.remove('active');
+});
+languageDropdown.addEventListener('click', function(e) {
+e.stopPropagation();
+const target = e.target.closest('a');
+if (target) {
+const langText = target.querySelector('span').textContent;
+if (langText === 'English') {
+translatePage('en');
+} else if (langText === 'Español') {
+translatePage('es');
+} else if (langText === 'Português') {
+translatePage('pt');
+}
+languageDropdown.classList.remove('active');
+}
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</body>
+</html>
