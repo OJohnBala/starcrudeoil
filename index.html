@@ -805,6 +805,19 @@ marketCards[3].querySelector('p').textContent = t.markets.portugal;
 marketCards[4].querySelector('p').textContent = t.markets.spain;
 marketCards[5].querySelector('p').textContent = t.markets.china;
 marketCards[6].querySelector('p').textContent = t.markets.russia;
+// Partners section
+document.querySelector('#parceiros h2').textContent = t.partners.title;
+document.querySelector('#parceiros > div > div > p').textContent = t.partners.subtitle;
+const partnerCards = document.querySelectorAll('#parceiros .card-hover');
+partnerCards[0].querySelector('h3').textContent = t.partners.partner1.name;
+partnerCards[0].querySelector('.text-secondary').textContent = t.partners.partner1.category;
+partnerCards[0].querySelector('.text-gray-700').textContent = t.partners.partner1.desc;
+partnerCards[1].querySelector('h3').textContent = t.partners.partner2.name;
+partnerCards[1].querySelector('.text-secondary').textContent = t.partners.partner2.category;
+partnerCards[1].querySelector('.text-gray-700').textContent = t.partners.partner2.desc;
+partnerCards[2].querySelector('h3').textContent = t.partners.partner3.name;
+partnerCards[2].querySelector('.text-secondary').textContent = t.partners.partner3.category;
+partnerCards[2].querySelector('.text-gray-700').textContent = t.partners.partner3.desc;
 // Contact section
 document.querySelector('#contato h2').textContent = t.contact.title;
 document.querySelector('#contato > div > div > p').textContent = t.contact.subtitle;
@@ -960,6 +973,7 @@ carouselContainer.addEventListener('mouseleave', startAutoSlide);
 </body>
 
 </html>
+
 
 
 
