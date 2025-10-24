@@ -3,7 +3,7 @@
 <head><script src="https://static.readdy.ai/static/e.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Star Crude Oil</title>
+<title>Star Crude Oil - Consultoria em Petróleo e Gás</title>
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#1e3a5f',secondary:'#d4af37'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,9 @@
 .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
 .language-selector { display: none; }
 .language-selector.active { display: block; }
+.carousel-container { position: relative; }
+.carousel-track { transition: transform 0.5s ease-in-out; }
+.carousel-slide { min-width: 100%; }
 </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
@@ -33,8 +36,10 @@
 <div class="hidden md:flex items-center space-x-8">
 <a href="#home" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Home</a>
 <a href="#sobre" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Sobre</a>
+<a href="#quem-somos" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Quem Somos</a>
 <a href="#servicos" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Serviços</a>
 <a href="#mercados" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Mercados</a>
+<a href="#parceiros" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Parceiros</a>
 <a href="#contato" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">Contato</a>
 </div>
 <div class="relative">
@@ -47,12 +52,15 @@
 </button>
 <div id="language-dropdown" class="language-selector absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-lg shadow-lg">
 <a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
+<img src="https://readdy.ai/api/search-image?query=Brazil%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=br-flag2&orientation=landscape" alt="PT" class="w-5 h-3 object-cover rounded-sm">
 <span class="text-sm">Português</span>
 </a>
 <a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
+<img src="https://readdy.ai/api/search-image?query=United%20States%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=us-flag&orientation=landscape" alt="EN" class="w-5 h-3 object-cover rounded-sm">
 <span class="text-sm">English</span>
 </a>
 <a href="#" class="flex items-center space-x-2 px-3 py-2 hover:bg-gray-50 transition-colors duration-200">
+<img src="https://readdy.ai/api/search-image?query=Spain%20flag%20icon%20small%20rectangular%20design%20clean%20minimal%20style&width=24&height=16&seq=es-flag&orientation=landscape" alt="ES" class="w-5 h-3 object-cover rounded-sm">
 <span class="text-sm">Español</span>
 </a>
 </div>
@@ -85,7 +93,7 @@ Conheça Nossos Serviços
 <div class="fade-in">
 <h2 class="text-4xl font-bold text-primary mb-6">Sobre a Star Crude Oil</h2>
 <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, fundada pelo empresário português José Almeida Santos, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.
+Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.
 </p>
 <p class="text-lg text-gray-700 mb-6 leading-relaxed">
 Nossa expertise abrange desde a intermediação de infraestruturas complexas até equipamentos especializados e operações de fusões e aquisições (M&A), sempre com foco na excelência e resultados sustentáveis.
@@ -100,7 +108,84 @@ Atuamos estrategicamente em mercados-chave da América Latina e Europa, oferecen
 </div>
 </div>
 </section>
-<section id="servicos" class="py-20 bg-white">
+<section id="quem-somos" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Quem Somos</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Conheça nossa equipe de especialistas com vasta experiência no setor de petróleo e gás
+</p>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<div class="carousel-container overflow-hidden">
+<div id="carousel-track" class="carousel-track flex">
+<div class="carousel-slide">
+<div class="bg-gray-50 rounded-xl p-8 mx-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-shrink-0">
+<img src="F:\Baixados\Processos\Varandas\Fotos\AI\JAS_300.jpg" alt="José Almeida Santos" class="w-48 h-48 object-cover rounded-xl">
+</div>
+<div class="text-center md:text-left">
+<h3 class="text-2xl font-bold text-primary mb-2">José Almeida Santos</h3>
+<p class="text-lg text-secondary font-semibold mb-4">CEO & Fundador</p>
+<p class="text-gray-700 leading-relaxed">
+Empresário português com mais de 10 anos de experiência no setor. Especialista em intermediações estratégicas no mercado asiático e latino-americano.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-slide">
+<div class="bg-gray-50 rounded-xl p-8 mx-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-shrink-0">
+<img src="https://readdy.ai/api/search-image?query=Professional%20business%20woman%20executive%20in%20elegant%20blazer%20with%20confident%20smile%2C%20oil%20and%20gas%20industry%20expert%20portrait%2C%20corporate%20headshot%20with%20blue%20background%2C%20experienced%20petroleum%20operations%20director&width=300&height=300&seq=team-2&orientation=squarish" alt="Ana Carolina Ferreira" class="w-48 h-48 object-cover rounded-xl">
+</div>
+<div class="text-center md:text-left">
+<h3 class="text-2xl font-bold text-primary mb-2">Luís Fernando Orozco</h3>
+<p class="text-lg text-secondary font-semibold mb-4">Parceiro Estratégico em Operações na Colômbia</p>
+<p class="text-gray-700 leading-relaxed">
+Especialista com mais de 15 anos de experiência no setor de engenharia de petróleo e meio ambiente.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-slide">
+<div class="bg-gray-50 rounded-xl p-8 mx-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-shrink-0">
+<img src="https://readdy.ai/api/search-image?query=Professional%20business%20man%20executive%20in%20modern%20suit%20with%20friendly%20expression%2C%20oil%20and%20gas%20industry%20financial%20expert%20portrait%2C%20corporate%20headshot%20with%20blue%20background%2C%20experienced%20petroleum%20business%20development%20manager&width=300&height=300&seq=team-3&orientation=squarish" alt="Carlos Eduardo Silva" class="w-48 h-48 object-cover rounded-xl">
+</div>
+<div class="text-center md:text-left">
+<h3 class="text-2xl font-bold text-primary mb-2">Leonardo Abad</h3>
+<p class="text-lg text-secondary font-semibold mb-4">Legal & Business Affairs</p>
+<p class="text-gray-700 leading-relaxed">
+Advogado com mais 20 anos de experiência, atuante na elaboração e no desenvolvimento de negócios no setor energético. Especialista em M&A e parcerias estratégicas. Formado em Direito e com MBA em Business Administration pela FGV no Brasil.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-8 space-x-4">
+<button id="prev-btn" class="w-12 h-12 flex items-center justify-center bg-primary/10 hover:bg-primary hover:text-white text-primary rounded-full transition-all duration-300">
+<i class="ri-arrow-left-line text-xl"></i>
+</button>
+<div class="flex space-x-2 items-center">
+<div class="carousel-dot w-3 h-3 rounded-full bg-primary cursor-pointer transition-all duration-300"></div>
+<div class="carousel-dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer transition-all duration-300"></div>
+<div class="carousel-dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer transition-all duration-300"></div>
+</div>
+<button id="next-btn" class="w-12 h-12 flex items-center justify-center bg-primary/10 hover:bg-primary hover:text-white text-primary rounded-full transition-all duration-300">
+<i class="ri-arrow-right-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section id="servicos" class="py-20 bg-gray-50">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16 fade-in">
 <h2 class="text-4xl font-bold text-primary mb-4">Nossos Serviços</h2>
@@ -124,7 +209,7 @@ Facilitamos conexões estratégicas para projetos de infraestrutura petrolífera
 </div>
 <h3 class="text-2xl font-bold text-primary mb-4">Equipamentos Especializados</h3>
 <p class="text-gray-700 leading-relaxed">
-Intermediamos a aquisição e locação de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.
+Intermediamos a aquisição de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.
 </p>
 </div>
 <div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
@@ -139,29 +224,29 @@ Assessoramos em operações de fusões e aquisições no setor energético, prop
 </div>
 </div>
 </section>
-<section id="mercados" class="py-20 bg-gray-50">
+<section id="mercados" class="py-20 bg-white">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16 fade-in">
 <h2 class="text-4xl font-bold text-primary mb-4">Nossos Mercados</h2>
 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-Presença estratégica em mercados-chave da América Latina e Europa
+Presença estratégica em mercados-chave da América Latina, Europa e Ásia
 </p>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
 <div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
 <img src="https://readdy.ai/api/search-image?query=Brazil%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=brazil-flag&orientation=landscape" alt="Brasil" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
 <h3 class="text-lg font-bold text-primary mb-2">Brasil</h3>
 <p class="text-sm text-gray-600">Maior mercado de atuação com foco no pré-sal e refino</p>
 </div>
 <div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
-<img src="https://raw.githubusercontent.com/OJohnBala/starcrudeoil/refs/heads/main/ecuador.jpg" alt="Equador" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
-<h3 class="text-lg font-bold text-primary mb-2">Equador</h3>
-<p class="text-sm text-gray-600">Projetos de exploração e infraestrutura</p>
-</div>
-<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
 <img src="https://github.com/OJohnBala/starcrudeoil/blob/main/colombia.jpg?raw=true" alt="Colômbia" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
 <h3 class="text-lg font-bold text-primary mb-2">Colômbia</h3>
 <p class="text-sm text-gray-600">Intermediação em campos offshore e onshore</p>
+</div>
+<div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
+<img src="https://raw.githubusercontent.com/OJohnBala/starcrudeoil/refs/heads/main/ecuador.jpg" alt="Equador" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
+<h3 class="text-lg font-bold text-primary mb-2">Equador</h3>
+<p class="text-sm text-gray-600">Projetos de exploração e infraestrutura</p>
 </div>
 <div class="bg-white rounded-xl p-6 text-center card-hover fade-in">
 <img src="https://readdy.ai/api/search-image?query=Portugal%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=portugal-flag&orientation=landscape" alt="Portugal" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
@@ -172,6 +257,58 @@ Presença estratégica em mercados-chave da América Latina e Europa
 <img src="https://raw.githubusercontent.com/OJohnBala/starcrudeoil/refs/heads/main/spain.jpg" alt="Espanha" class="w-20 h-14 object-cover mx-auto mb-4 rounded-md">
 <h3 class="text-lg font-bold text-primary mb-2">Espanha</h3>
 <p class="text-sm text-gray-600">Refinarias e distribuição no mercado ibérico</p>
+</div>
+<div class="bg-white rounded-xl p-4 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=China%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=china-flag&orientation=landscape" alt="China" class="w-16 h-12 object-cover mx-auto mb-3 rounded-md">
+<h3 class="text-base font-bold text-primary mb-2">China</h3>
+<p class="text-xs text-gray-600">Parcerias estratégicas na exploração, fabricação de equipamentos e infraestruturas</p>
+</div>
+<div class="bg-white rounded-xl p-4 text-center card-hover fade-in">
+<img src="https://readdy.ai/api/search-image?query=Russia%20flag%20official%20design%20rectangular%20format%20clean%20high%20quality&width=120&height=80&seq=russia-flag&orientation=landscape" alt="Rússia" class="w-16 h-12 object-cover mx-auto mb-3 rounded-md">
+<h3 class="text-base font-bold text-primary mb-2">Rússia</h3>
+<p class="text-xs text-gray-600">Infraestruturas no setor de gás</p>
+</div>
+</div>
+</div>
+</section>
+<section id="parceiros" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 fade-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Parceiros Estratégicos</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Colaboramos com empresas com expertise no setor para oferecer soluções completas e inovadoras
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
+<div class="text-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=Modern%20oil%20and%20gas%20company%20logo%20design%20with%20blue%20and%20silver%20colors%2C%20professional%20corporate%20identity%20for%20petroleum%20infrastructure%20company%2C%20clean%20geometric%20design%20on%20white%20background&width=200&height=120&seq=partner-1&orientation=landscape" alt="PetroTech Solutions" class="w-32 h-20 object-contain mx-auto mb-4 rounded-md">
+<h3 class="text-2xl font-bold text-primary mb-2">Bomcobras</h3>
+<p class="text-lg text-secondary font-semibold mb-4">Equipamentos e Infraestruturas</p>
+</div>
+<p class="text-gray-700 leading-relaxed text-center">
+Braço no Brasil da CNPC, que é líder em fornecimento de equipamentos de alta tecnologia para exploração Onshore e Offshore. Parceria estratégica que nos permite oferecer as mais avançadas soluções em perfuração e extração petrolífera.
+</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
+<div class="text-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=International%20energy%20corporation%20logo%20design%20with%20golden%20and%20blue%20colors%2C%20global%20petroleum%20refinery%20company%20branding%2C%20professional%20corporate%20symbol%20with%20industrial%20elements%20on%20white%20background&width=200&height=120&seq=partner-2&orientation=landscape" alt="Global Energy Corp" class="w-32 h-20 object-contain mx-auto mb-4 rounded-md">
+<h3 class="text-2xl font-bold text-primary mb-2">Petro Ambientes SAS</h3>
+<p class="text-lg text-secondary font-semibold mb-4">Engenharia e Meio Ambiente</p>
+</div>
+<p class="text-gray-700 leading-relaxed text-center">
+Empresa de engenharia especializada no setor de petróleo e serviços ambientais. Liderada pelo Eng Luís Fernando Orozco, que possui mais de 15 anos de experiência no setor.
+</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-xl p-8 card-hover fade-in">
+<div class="text-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=Financial%20investment%20firm%20logo%20design%20for%20energy%20sector%20with%20elegant%20gold%20and%20navy%20blue%20colors%2C%20corporate%20finance%20company%20branding%20for%20oil%20and%20gas%20mergers%2C%20sophisticated%20business%20identity%20on%20white%20background&width=200&height=120&seq=partner-3&orientation=landscape" alt="Atlantic Capital Partners" class="w-32 h-20 object-contain mx-auto mb-4 rounded-md">
+<h3 class="text-2xl font-bold text-primary mb-2">Abad Ferreira Advocacia</h3>
+<p class="text-lg text-secondary font-semibold mb-4">Investimentos e M&A</p>
+</div>
+<p class="text-gray-700 leading-relaxed text-center">
+Especializada em assessoria de alto nível para a estruturação de investimentos e operações de M&A. Com mais de 20 anos de experiência, que oferece suporte jurídico estratégico, da due diligence à negociação final.
+</p>
 </div>
 </div>
 </div>
@@ -257,13 +394,15 @@ Consultoria especializada em petróleo e gás com mais de 10 anos de experiênci
 <li>Colômbia</li>
 <li>Portugal</li>
 <li>Espanha</li>
+<li>China</li>
+<li>Rússia</li>
 </ul>
 </div>
 <div>
 <h4 class="text-lg font-semibold mb-4">Contato</h4>
 <ul class="space-y-2 text-gray-300">
 <li>+55 (11) 3181-4325</li>
-<li>contato@starcrudeoil.com</li>
+<li>info @starcrudeoil.com</li>
 <li>São Paulo, SP - Brasil</li>
 </ul>
 </div>
@@ -273,7 +412,9 @@ Consultoria especializada em petróleo e gás com mais de 10 anos de experiênci
 </div>
 </div>
 </footer>
-<script id="fade-in-animation">
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Fade-in animation
 document.addEventListener('DOMContentLoaded', function() {
 const observerOptions = {
 threshold: 0.1,
@@ -290,8 +431,8 @@ document.querySelectorAll('.fade-in').forEach(el => {
 observer.observe(el);
 });
 });
-</script>
-<script id="language-selector">
+
+// Language selector
 document.addEventListener('DOMContentLoaded', function() {
 const languageToggle = document.getElementById('language-toggle');
 const languageDropdown = document.getElementById('language-dropdown');
@@ -300,8 +441,10 @@ pt: {
 nav: {
 home: 'Home',
 about: 'Sobre',
+team: 'Quem Somos',
 services: 'Serviços',
 markets: 'Mercados',
+partners: 'Parceiros',
 contact: 'Contato'
 },
 hero: {
@@ -311,7 +454,7 @@ cta: 'Conheça Nossos Serviços'
 },
 about: {
 title: 'Sobre a Star Crude Oil',
-p1: 'Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gás, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.',
+p1: 'Com mais de <span class="text-primary font-semibold">10 anos de experiência</span> no setor de petróleo e gáss, fundada pelo Sr. José Almeida Santos, a Star Crude Oil estabeleceu-se como uma consultoria de referência em intermediações estratégicas.',
 p2: 'Nossa expertise abrange desde a intermediação de infraestruturas complexas até equipamentos especializados e operações de fusões e aquisições (M&A), sempre com foco na excelência e resultados sustentáveis.',
 p3: 'Atuamos estrategicamente em mercados-chave da América Latina e Europa, oferecendo soluções personalizadas que impulsionam o crescimento e a eficiência operacional de nossos clientes.'
 },
@@ -324,7 +467,7 @@ desc: 'Facilitamos conexões estratégicas para projetos de infraestrutura petro
 },
 service2: {
 title: 'Equipamentos Especializados',
-desc: 'Intermediamos a aquisição e locação de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.'
+desc: 'Intermediamos a aquisição de equipamentos de alta tecnologia para exploração, refino e distribuição, conectando fornecedores confiáveis aos seus projetos.'
 },
 service3: {
 title: 'M&A (Fusões e Aquisições)',
@@ -333,12 +476,14 @@ desc: 'Assessoramos em operações de fusões e aquisições no setor energétic
 },
 markets: {
 title: 'Nossos Mercados',
-subtitle: 'Presença estratégica em mercados-chave da América Latina e Europa',
+subtitle: 'Presença estratégica em mercados-chave da América Latina, Europa e Ásia',
 brazil: 'Maior mercado de atuação com foco no pré-sal e refino',
-ecuador: 'Projetos de exploração e infraestrutura amazônica',
 colombia: 'Intermediação em campos offshore e onshore',
+ecuador: 'Projetos de exploração e infraestrutura amazônica',
 portugal: 'Gateway europeu para negócios energéticos',
-spain: 'Refinarias e distribuição no mercado ibérico'
+spain: 'Refinarias e distribuição no mercado ibérico',
+china: 'Parcerias estratégicas na exploração, fabricação de equipamentos e infraestruturas',
+russia: 'Infraestruturas no setor de gás'
 },
 contact: {
 title: 'Entre em Contato',
@@ -349,10 +494,49 @@ phone: 'Telefone',
 email: 'Email',
 website: 'Website'
 },
+team: {
+title: 'Quem Somos',
+subtitle: 'Conheça nossa equipe de especialistas com vasta experiência no setor de petróleo e gás',
+member1: {
+name: 'José Almeida Santos',
+position: 'CEO & Fundador',
+desc: 'Empresário português com mais de 10 anos de experiência no setor. Especialista em intermediações estratégicas no mercado asiático e latino-americano.'
+},
+member2: {
+name: 'Luís Fernando Orozco',
+position: 'Parceiro Estratégico em Operações na Colômbia',
+desc: 'Especialista com mais de 15 anos de experiência no setor de engenharia de petróleo e meio ambiente.'
+},
+member3: {
+name: 'Leonardo Abad',
+position: 'Legal & Business Affairs',
+desc: 'Advogado com mais 20 anos de experiência, atuante na elaboração e no desenvolvimento de negócios no setor energético. Especialista em M&A e parcerias estratégicas. Formado em Direito e com MBA em Business Administration pela FGV no Brasil.'
+}
+},
+partners: {
+title: 'Parceiros Estratégicos',
+subtitle: 'Colaboramos com empresas líderes do setor para oferecer soluções completas e inovadoras',
+partner1: {
+name: 'Bomcobras',
+category: 'Equipamentos e Infraestruturas',
+desc: 'Braço no Brasil da CNPC, que é líder em fornecimento de equipamentos de alta tecnologia para exploração Onshore e Offshore. Parceria estratégica que nos permite oferecer as mais avançadas soluções em perfuração e extração petrolífera.'
+},
+partner2: {
+name: 'Petro Ambientes SAS',
+category: 'Engenharia e Meio Ambiente',
+desc: 'Empresa de engenharia especializada no setor de petróleo e serviços ambientais. Liderada pelo Eng Luís Fernando Orozco, que possui mais de 15 anos de experiência no setor.'
+},
+partner3: {
+name: 'Abad Ferreira Advocacia',
+category: 'Investimentos e M&A',
+desc: 'Especializada em assessoria de alto nível para a estruturação de investimentos e operações de M&A. Com mais de 20 anos de experiência, que oferece suporte jurídico estratégico, da due diligence à negociação final.'
+}
+},
 footer: {
 description: 'Consultoria especializada em petróleo e gás com mais de 10 anos de experiência no mercado.',
 services: 'Serviços',
 markets: 'Mercados',
+partners: 'Parceiros',
 contact: 'Contato',
 rights: 'Todos os direitos reservados.'
 }
@@ -361,8 +545,10 @@ en: {
 nav: {
 home: 'Home',
 about: 'About',
+team: 'Who We Are',
 services: 'Services',
 markets: 'Markets',
+partners: 'Partners',
 contact: 'Contact'
 },
 hero: {
@@ -372,7 +558,7 @@ cta: 'Learn About Our Services'
 },
 about: {
 title: 'About Star Crude Oil',
-p1: 'With over <span class="text-primary font-semibold">10 years of experience</span> in the oil and gas sector, founded by Portuguese businessman José Almeida Santos, Star Crude Oil has established itself as a benchmark consultancy in strategic intermediations.',
+p1: 'With over <span class="text-primary font-semibold">10 years of experience</span> in the oil and gas sector,  founded by Portuguese businessman José Almeida Santos, Star Crude Oil has established itself as a benchmark consultancy in strategic intermediations.',
 p2: 'Our expertise ranges from intermediating complex infrastructures to specialized equipment and mergers and acquisitions (M&A) operations, always focusing on excellence and sustainable results.',
 p3: 'We operate strategically in key markets in Latin America and Europe, offering customized solutions that drive growth and operational efficiency for our clients.'
 },
@@ -385,7 +571,7 @@ desc: 'We facilitate strategic connections for petroleum infrastructure projects
 },
 service2: {
 title: 'Specialized Equipment',
-desc: 'We intermediate the acquisition and leasing of high-tech equipment for exploration, refining and distribution, connecting reliable suppliers to your projects.'
+desc: 'We intermediate the acquisition of high-tech equipment for exploration, refining and distribution, connecting reliable suppliers to your projects.'
 },
 service3: {
 title: 'M&A (Mergers and Acquisitions)',
@@ -394,12 +580,14 @@ desc: 'We advise on mergers and acquisitions operations in the energy sector, pr
 },
 markets: {
 title: 'Our Markets',
-subtitle: 'Strategic presence in key markets in Latin America and Europe',
+subtitle: 'Strategic presence in key markets in Latin America, Europe and Asia',
 brazil: 'Largest operating market with focus on pre-salt and refining',
 ecuador: 'Amazon exploration and infrastructure projects',
 colombia: 'Intermediation in offshore and onshore fields',
 portugal: 'European gateway for energy business',
-spain: 'Refineries and distribution in the Iberian market'
+spain: 'Refineries and distribution in the Iberian market',
+china: 'Strategic partnerships in exploration, equipment manufacturing, and infrastructure',
+russia: 'Infrastructure in the gas sector'
 },
 contact: {
 title: 'Get in Touch',
@@ -410,10 +598,49 @@ phone: 'Phone',
 email: 'Email',
 website: 'Website'
 },
+team: {
+title: 'Who We Are',
+subtitle: 'Meet our team of experts with extensive experience in the oil and gas sector',
+member1: {
+name: 'José Almeida Santos',
+position: 'CEO & Founder',
+desc: 'Portuguese businessman with more than 10 years of experience in the sector. Specialist in strategic intermediation in the Asian and Latin American markets.'
+},
+member2: {
+name: 'Luís Fernando Orozco',
+position: 'Strategic Partner for Operations in Colombia',
+desc: 'Specialist with over 15 years of experience in the petroleum and environmental engineering sector.'
+},
+member3: {
+name: 'Leonardo Abad',
+position: 'Legal & Business Affairs',
+desc: 'Lawyer with over 20 years of experience, specializing in business development in the energy sector. He specializes in M&A and strategic partnerships. He holds a law degree and an MBA in Business Administration from FGV in Brazil.'
+}
+},
+partners: {
+title: 'Strategic Partners',
+subtitle: 'We collaborate with industry-leading companies to offer complete and innovative solutions',
+partner1: {
+name: 'Bomcobras',
+category: 'Technology and Equipment',
+desc: 'The Brazilian arm of CNPC, a leading supplier of high-tech equipment for onshore and offshore exploration. A strategic partnership that allows us to offer the most advanced solutions in oil drilling and extraction.'
+},
+partner2: {
+name: 'Petro Ambientes SAS',
+category: 'Engineering and Environment',
+desc: 'An engineering company specializing in the oil and environmental services sector. Led by Engineer Luís Fernando Orozco, who has over 15 years of experience in the sector.'
+},
+partner3: {
+name: 'Abad Ferreira Advocacia',
+category: 'Investments and M&A',
+desc: 'Specializing in high-level advisory services for structuring investments and M&A transactions. With over 20 years of experience, we offer strategic legal support, from due diligence to final negotiation.'
+}
+},
 footer: {
 description: 'Specialized consulting in oil and gas with over 10 years of market experience.',
 services: 'Services',
 markets: 'Markets',
+partners: 'Partners',
 contact: 'Contact',
 rights: 'All rights reserved.'
 }
@@ -422,8 +649,10 @@ es: {
 nav: {
 home: 'Inicio',
 about: 'Acerca',
+team: 'Quiénes Somos',
 services: 'Servicios',
 markets: 'Mercados',
+partners: 'Socios',
 contact: 'Contacto'
 },
 hero: {
@@ -455,12 +684,14 @@ desc: 'Asesoramos en operaciones de fusiones y adquisiciones en el sector energ�
 },
 markets: {
 title: 'Nuestros Mercados',
-subtitle: 'Presencia estratégica en mercados clave de América Latina y Europa',
+subtitle: 'Presencia estratégica en mercados clave de América Latina, Europa y Asia',
 brazil: 'Mayor mercado de operación con enfoque en pre-sal y refinación',
 ecuador: 'Proyectos de exploración e infraestructura amazónica',
 colombia: 'Intermediación en campos offshore y onshore',
 portugal: 'Puerta de entrada europea para negocios energéticos',
-spain: 'Refinerías y distribución en el mercado ibérico'
+spain: 'Refinerías y distribución en el mercado ibérico',
+china: 'Asociaciones estratégicas en energía y petroquímica',
+russia: 'Consultoría en tecnología e infraestructura energética'
 },
 contact: {
 title: 'Póngase en Contacto',
@@ -471,22 +702,64 @@ phone: 'Teléfono',
 email: 'Email',
 website: 'Sitio Web'
 },
+team: {
+title: 'Quiénes Somos',
+subtitle: 'Conozca nuestro equipo de especialistas con amplia experiencia en el sector petrolero y gasífero',
+member1: {
+name: 'José Almeida Santos',
+position: 'CEO y Fundador',
+desc: 'Empresario portugués con más de 10 años de experiencia en el sector. Especialista en intermediación estratégica en los mercados asiático y latinoamericano.'
+},
+member2: {
+name: 'Luís Fernando Orozco',
+position: 'Directora de Operaciones',
+desc: 'Especialista en infraestructura petrolera con 12 años de experiencia en proyectos internacionales. Responsable de la expansión de la empresa en mercados europeos. Graduada en Ingeniería Química por USP con especialización en Gestión de Proyectos.'
+},
+member3: {
+name: 'Leonardo Abad',
+position: 'Director Comercial',
+desc: 'Profesional con 10 años de experiencia en desarrollo de negocios en el sector energético. Especialista en M&A y alianzas estratégicas. Graduado en Administración por FGV con MBA en Finanzas Corporativas por INSPER.'
+}
+},
+partners: {
+title: 'Socios Estratégicos',
+subtitle: 'Colaboramos con empresas líderes del sector para ofrecer soluciones completas e innovadoras',
+partner1: {
+name: 'PetroTech Solutions',
+category: 'Tecnología y Equipos',
+desc: 'Líder en suministro de equipos de alta tecnología para exploración offshore. Asociación estratégica que nos permite ofrecer las más avanzadas soluciones en perforación y extracción petrolera.'
+},
+partner2: {
+name: 'Global Energy Corp',
+category: 'Infraestructura y Refinación',
+desc: 'Multinacional especializada en infraestructura de refinación con presencia en 15 países. Nuestra asociación facilita proyectos de gran escala en refinerías y terminales de distribución.'
+},
+partner3: {
+name: 'Atlantic Capital Partners',
+category: 'Inversiones y M&A',
+desc: 'Fondo de inversión especializado en energía con cartera de $2 mil millones. Asociación esencial para operaciones de M&A y financiamiento de proyectos de infraestructura energética.'
+}
+},
 footer: {
 description: 'Consultoría especializada en petróleo y gas con más de 10 años de experiencia en el mercado.',
 services: 'Servicios',
 markets: 'Mercados',
+partners: 'Socios',
 contact: 'Contacto',
 rights: 'Todos los derechos reservados.'
 }
 }
 };
+
 function translatePage(lang) {
 const t = translations[lang];
 // Navigation
 document.querySelector('a[href="#home"]').textContent = t.nav.home;
 document.querySelector('a[href="#sobre"]').textContent = t.nav.about;
+document.querySelector('a[href="#quem-somos"]').textContent = t.nav.team;
 document.querySelector('a[href="#servicos"]').textContent = t.nav.services;
 document.querySelector('a[href="#mercados"]').textContent = t.nav.markets;
+document.querySelector('a[href="#parceiros"]').textContent = t.nav.partners;
 document.querySelector('a[href="#contato"]').textContent = t.nav.contact;
 // Hero section
 document.querySelector('#home h1').textContent = t.hero.title;
@@ -498,6 +771,19 @@ const aboutPs = document.querySelectorAll('#sobre p');
 aboutPs[0].innerHTML = t.about.p1;
 aboutPs[1].textContent = t.about.p2;
 aboutPs[2].textContent = t.about.p3;
+// Team section
+document.querySelector('#quem-somos h2').textContent = t.team.title;
+document.querySelector('#quem-somos > div > div > p').textContent = t.team.subtitle;
+const teamSlides = document.querySelectorAll('.carousel-slide');
+teamSlides[0].querySelector('h3').textContent = t.team.member1.name;
+teamSlides[0].querySelector('.text-secondary').textContent = t.team.member1.position;
+teamSlides[0].querySelector('.text-gray-700').textContent = t.team.member1.desc;
+teamSlides[1].querySelector('h3').textContent = t.team.member2.name;
+teamSlides[1].querySelector('.text-secondary').textContent = t.team.member2.position;
+teamSlides[1].querySelector('.text-gray-700').textContent = t.team.member2.desc;
+teamSlides[2].querySelector('h3').textContent = t.team.member3.name;
+teamSlides[2].querySelector('.text-secondary').textContent = t.team.member3.position;
+teamSlides[2].querySelector('.text-gray-700').textContent = t.team.member3.desc;
 // Services section
 document.querySelector('#servicos h2').textContent = t.services.title;
 document.querySelector('#servicos > div > div > p').textContent = t.services.subtitle;
@@ -517,6 +803,8 @@ marketCards[1].querySelector('p').textContent = t.markets.ecuador;
 marketCards[2].querySelector('p').textContent = t.markets.colombia;
 marketCards[3].querySelector('p').textContent = t.markets.portugal;
 marketCards[4].querySelector('p').textContent = t.markets.spain;
+marketCards[5].querySelector('p').textContent = t.markets.china;
+marketCards[6].querySelector('p').textContent = t.markets.russia;
 // Contact section
 document.querySelector('#contato h2').textContent = t.contact.title;
 document.querySelector('#contato > div > div > p').textContent = t.contact.subtitle;
@@ -550,13 +838,16 @@ langImg.src = 'https://readdy.ai/api/search-image?query=Brazil%20flag%20icon%20s
 langImg.alt = 'PT';
 }
 }
+
 languageToggle.addEventListener('click', function(e) {
 e.stopPropagation();
 languageDropdown.classList.toggle('active');
 });
+
 document.addEventListener('click', function() {
 languageDropdown.classList.remove('active');
 });
+
 languageDropdown.addEventListener('click', function(e) {
 e.stopPropagation();
 const target = e.target.closest('a');
@@ -573,8 +864,8 @@ languageDropdown.classList.remove('active');
 }
 });
 });
-</script>
-<script id="smooth-scroll">
+
+// Smooth scroll
 document.addEventListener('DOMContentLoaded', function() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 anchor.addEventListener('click', function (e) {
@@ -589,6 +880,82 @@ block: 'start'
 });
 });
 });
-</body>
 
+// Team carousel - Fixed version
+document.addEventListener('DOMContentLoaded', function() {
+const track = document.getElementById('carousel-track');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const dots = document.querySelectorAll('.carousel-dot');
+let currentSlide = 0;
+const totalSlides = 3;
+let autoSlideInterval;
+
+function updateCarousel() {
+const translateX = -currentSlide * 100;
+track.style.transform = `translateX(${translateX}%)`;
+
+// Update dots
+dots.forEach((dot, index) => {
+if (index === currentSlide) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+} else {
+dot.classList.remove('bg-primary');
+dot.classList.add('bg-gray-300');
+}
+});
+}
+
+function nextSlide() {
+currentSlide = (currentSlide + 1) % totalSlides;
+updateCarousel();
+}
+
+function prevSlide() {
+currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+updateCarousel();
+}
+
+function startAutoSlide() {
+autoSlideInterval = setInterval(nextSlide, 5000);
+}
+
+function stopAutoSlide() {
+clearInterval(autoSlideInterval);
+}
+
+// Event listeners
+nextBtn.addEventListener('click', function() {
+stopAutoSlide();
+nextSlide();
+startAutoSlide();
+});
+
+prevBtn.addEventListener('click', function() {
+stopAutoSlide();
+prevSlide();
+startAutoSlide();
+});
+
+dots.forEach((dot, index) => {
+dot.addEventListener('click', function() {
+stopAutoSlide();
+currentSlide = index;
+updateCarousel();
+startAutoSlide();
+});
+});
+
+// Initialize carousel
+updateCarousel();
+startAutoSlide();
+
+// Pause auto-slide on hover
+const carouselContainer = document.querySelector('.carousel-container');
+carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+carouselContainer.addEventListener('mouseleave', startAutoSlide);
+});
+</script>
+</body>
 </html>
